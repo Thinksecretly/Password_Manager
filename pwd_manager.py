@@ -17,8 +17,10 @@ def add():
 
 def view():
     with open ("passwords.txt", "r") as f:
-        for line in f:
-            print(line)
+        for line in f.readlines():
+            data = print(line.rstrip())
+            service, usr, pwd = data.split(" | ")
+            print("Service: " + service + " , Username: " + usr + " , Password: " + pwd)
 
 while True:
     choice = input("Would you like to add a new password or view an existing one? Or enter exit to quit (add/view/exit)")
