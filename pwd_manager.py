@@ -22,6 +22,10 @@ fer = Fernet(key)
 
 if master_pwd == "password":
     print("Welcome to the password manager")
+else:
+    print("Incorrect password")
+    exit()
+
 
 
 
