@@ -44,7 +44,7 @@ def view():
             print("Service: " + service + " , Username: " + usr + " , Password: " + fer.decrypt(pwd.encode()).decode())
 
 while True:
-    choice = input("Would you like to add a new password or view an existing one? Or enter exit to quit (add/view/exit)").lower
+    choice = input("Would you like to add a new password or view an existing one? Or enter exit to quit (add/view/exit): ").lower()
 
     if choice == "add":
         add()
